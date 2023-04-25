@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cadastro/style2.css" />
+    <link rel="icon" href="img/logo-removebg-preview.png">
+    <title>Cadastrar</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="form-image">
+        <img src="img/logo-removebg-preview.png" alt="" />
+      </div>
+      
+      <div class="form">
+        <form id="cadastro-form">
+          <div class="form-header">
+            <div class="title">
+              <h1>CADASTRE-SE</h1>
+            </div>
+            <div class="login-button">
+           <a href="index.html"><button id="voltar" type="button">Voltar</button></a>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="input-box">
+              <label class="login__label" for="firstname">Primeiro Nome</label>
+              <input
+                class="input"
+              id="primeiroNome"
+                type="text"
+                name="firstname"
+                placeholder="Digite seu primeiro nome"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label class="login__label" for="lastname">Sobrenome</label>
+              <input
+                id="sobreNome"
+                type="text"
+                class="input"
+                name="lastname"
+                placeholder="Digite seu sobrenome"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label class="login__label" for="email">E-mail</label>
+              <input
+                id="email"
+                type="email"
+                class="input"
+                name="email"
+                placeholder="Digite seu e-mail"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label class="login__label" for="number">Celular</label>
+              <input
+                id="numero"
+                type="tel"
+                name="number"
+                class="input"
+                placeholder="(xx) xxxx-xxxx"
+                maxlength="11"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label class="login__label" for="password">Senha</label>
+              <input
+                id="senha"
+                type="password"
+                class="input"
+                name="password"
+                placeholder="Digite sua senha"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label class="login__label" for="confirmPassword">Confirme sua Senha</label>
+              <input
+                id="confirmar"
+                type="password"
+                class="input"
+                name="confirmPassword"
+                placeholder="Digite sua senha novamente"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="gender-inputs">
+            <div class="gender-title">
+              <h6>Gênero</h6>
+            </div>
+
+            <div class="gender-group">
+              <div class="gender-input">
+                <input id="female" type="radio" name="gender" />
+                <label for="female">Feminino</label>
+              </div>
+
+              <div class="gender-input">
+                <input id="male" type="radio" name="gender" />
+                <label for="male">Masculino</label>
+              </div>
+
+              <div class="gender-input">
+                <input id="others" type="radio" name="gender" />
+                <label for="others">Outros</label>
+              </div>
+
+              <div class="gender-input">
+                <input id="none" type="radio" name="gender" />
+                <label for="none">Prefiro não dizer</label>
+              </div>
+            </div>
+          </div>
+
+          
+          <button type="submit"  class="button" id="button__form">Continuar</button>
+        
+          
+  
+      
+      </div>
+    </div>
+  </form>
+    <script src="cadastro/script2.js"></script>
+  </body>
+</html>

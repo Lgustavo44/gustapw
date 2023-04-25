@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dash/style3.css" />
+    <link rel="icon" href="img/iconvasco.png" />
+    <title>Dashboard</title>
+  </head>
+  <body style="margin: 25px ;">
+    <h1>Tabela de pagamentos</h1>
+
+    <form id="infos-prod">
+      <label for="name">Nome: </label>
+      <input type="text" id="nome" name="nome" placeholder="Jogador" />
+
+      <label for="preco">Valor pago: </label>
+      <input type="text" id="preco" name="preco" placeholder="R$ 35,00" />
+      
+      <div class="checkbox">
+        <input type="checkbox" id="prime" name="prime" />
+        <span tabindex="0"></span>
+        <label for="prime">CONJUNTO?</label>
+      </div>
+
+      <input type="hidden" name="idx" id="idx" value="novo" />
+      <center><input type="submit" value="Salvar" /></center>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Modelo</th>
+          <th>Nome</th>
+          <th>Valor pago</th>
+          <th>Conjunto</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <button id="sair">Sair</button>
+
+    <script src="dash/script3.js"></script>
+  </body>
+</html>
