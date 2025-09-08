@@ -150,7 +150,7 @@ main {
 
 .wallpaper {
     width: 100%;
-   background-image: url(../img/foto.jpeg);
+   background-image: url(../img/foto.png);
     background-size: cover;
     background-position: center;
     flex: 1;
